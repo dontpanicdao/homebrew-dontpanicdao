@@ -5,20 +5,20 @@
 class GoStarknet < Formula
   desc ""
   homepage "https://github.com/dontpanicdao/caigo"
-  version "0.4.1-beta1"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dontpanicdao/caigo/releases/download/v0.4.1-beta1/go-starknet_0.4.1-beta1_darwin_x86_64.tar.gz"
-      sha256 "3bd145abe7fc2d9a446ae8825519c39f24a2930758c58509871a15744536a93a"
+      url "https://github.com/dontpanicdao/caigo/releases/download/v0.4.1/go-starknet_0.4.1_darwin_x86_64.tar.gz"
+      sha256 "4f09c6dd67d8987cc7ac81653840abbc64dc884b3e42760b18ecc966547faede"
 
       def install
         bin.install "go-starknet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dontpanicdao/caigo/releases/download/v0.4.1-beta1/go-starknet_0.4.1-beta1_darwin_arm64.tar.gz"
-      sha256 "d68eb20268d446eb4e5165088087b354e49426a748f4cfbd46f382fa9ff8cd73"
+      url "https://github.com/dontpanicdao/caigo/releases/download/v0.4.1/go-starknet_0.4.1_darwin_arm64.tar.gz"
+      sha256 "48deb8258bda25128ee68820656b974893dc18dce9d03ab496e4385fee2d8377"
 
       def install
         bin.install "go-starknet"
@@ -28,16 +28,16 @@ class GoStarknet < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dontpanicdao/caigo/releases/download/v0.4.1-beta1/go-starknet_0.4.1-beta1_linux_arm64.tar.gz"
-      sha256 "9e1f462b368252db6f4892d3f7785a0c39ac54450ef32925d8b05a5ede742ca0"
+      url "https://github.com/dontpanicdao/caigo/releases/download/v0.4.1/go-starknet_0.4.1_linux_arm64.tar.gz"
+      sha256 "79e723e0f6dd45cc3efa2d4ab35cd582df6f7198f59991e5ecddeb699eb2d687"
 
       def install
         bin.install "go-starknet"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dontpanicdao/caigo/releases/download/v0.4.1-beta1/go-starknet_0.4.1-beta1_linux_x86_64.tar.gz"
-      sha256 "28592ca89c50abf2d27fb041a2fe19899de025bf9fd398c9b33c56bd22a55d3f"
+      url "https://github.com/dontpanicdao/caigo/releases/download/v0.4.1/go-starknet_0.4.1_linux_x86_64.tar.gz"
+      sha256 "6ccc71b79d5f5e548c114093855390e43d19387f8c0439f02cde880d116455df"
 
       def install
         bin.install "go-starknet"
